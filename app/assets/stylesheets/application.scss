@@ -20,21 +20,6 @@
  @import "font-awesome";
 
  //---------Navbar---------
- /*
-.nav-pills {
-    color: #fff;//字体颜色
-    background-color: #EF6C00;//背景颜色
-    border-color: #EF6C00;//边框颜色
-}
-.nav-pills:hover {
-    background-color: #E65100;//鼠标放置在btn上的背景颜色
-    border-color: #E65100;//鼠标放置在btn上的边框颜色
-}
-*/
-/* navbar section
-导航栏css设置
-*/
-//修改导航栏背景，边框颜色
 
  .navbar-default {
      background-color: #212121;
@@ -58,14 +43,12 @@
  .navbar-default .navbar-nav > li > a {
      color: #EF6C00;
  }
- //修改导航栏鼠标经过和点击时候的颜色
 
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {
      color: #FF6F00;
      background-color: transparent;
  }
- //修改导航栏激活时候的颜色？
 
  .navbar-default .navbar-nav > .active > a,
  .navbar-default .navbar-nav > .active > a:hover,
@@ -73,7 +56,6 @@
      color: #FF6F00;
      background-color: #FFE0B2;
  }
- // 这是干什么？
 
  .navbar-default .navbar-nav > .open > a,
  .navbar-default .navbar-nav > .open > a:focus,
@@ -82,59 +64,49 @@
      color: #212121;
  }
 
- #search-id {
-   width: 200px;
-   padding-top: 7px;
 
- }
+#search-id {
+  width: 200px;
+  padding-top: 7px;
 
- /* Search.html.erb
-*/
+}
+//---------Box---------
 
-.search-info-title {
-  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
-  color: #0d6ded;
-  font-size: 20px;
-  text-align: center;
+.box {
+    background-image: url("header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    .box-inner {
+        background-color: rgba(250, 250, 250, 0.69);
+        padding-bottom: 5px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .slogan {
+        color: #222;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 25px;
+        top: 12px;
+    }
+
+    .lead {
+        margin-bottom: 60px;
+        text-align: center;
+        color: white;
+    }
 }
 
-  //---------Box---------
-
-  .box {
-      background-image: url("header.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: 50px;
-
-      .box-inner {
-          background-color: rgba(250, 250, 250, 0.69);
-          padding-bottom: 5px;
-          margin-top: 150px;
-          margin-bottom: 150px;
-      }
-
-      .title {
-          text-align: center;
-          margin-bottom: 80px;
-      }
-
-      .slogan {
-          color: #222;
-          margin-top: 10px;
-          margin-bottom: 50px;
-          text-align: center;
-          font-size: 25px;
-          top: 12px;
-      }
-
-      .lead {
-          margin-bottom: 60px;
-          text-align: center;
-          color: white;
-      }
-  }
-
- //---------Content---------
+//---------Content---------
 
  .content-section-a {
      padding: 50px 0;
@@ -158,10 +130,9 @@
  }
 
  .lead {
-     font-size: 18px;
-     font-weight: 400;
- }
-
+      font-size: 18px;
+      font-weight: 400;
+  }
 
  //---------Footer---------
 
@@ -173,3 +144,165 @@
      padding: 25px 0;
      background-color: #233140;
  }
+/*
+登录和注册
+*/
+.devise-view img {
+  background-color: #323232;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -5;
+}
+
+.devise-view a:link {
+  color: #fff;
+}
+
+.page-wrap {
+  min-height: 100%;
+  min-width: 100%;
+  margin-bottom: -60px;
+}
+
+.devise-view {
+  margin-bottom: -10px;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -999;
+}
+
+.devise-view .devise-sign-up {
+  margin: 80px auto;
+  color: #ffffff;
+  width: 900px;
+  height: 500px;
+}
+
+.devise-view .devise-sign-up .left {
+  padding: 0 20px 20px;
+  width: 580px;
+  height: 500px;
+  float: left;
+}
+
+.devise-view .devise-sign-up .right {
+  padding: 20px 20px 0;
+  margin: auto;
+  width: 320px;
+  height: 500px;
+  float: left;
+  color: #fff;
+}
+.devise-view .devise-sign-up .center {
+  padding: 20px 20px 0;
+  margin: auto;
+  width: 320px;
+  height: 500px;
+  float: center;
+  color: #fff;
+}
+
+.h1,
+h1 {
+  font-size: 36px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form {
+  display: block;
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.devise-view .btn-devise,
+.devise-view .btn-devise.active,
+.devise-view .btn-devise.active,
+.devise-view .btn-devise.active.focus,
+.devise-view .btn-devise.active:focus,
+.devise-view .btn-devise.active:hover,
+.devise-view .btn-devise.focus,
+.devise-view .btn-devise:active,
+.devise-view .btn-devise:active,
+.devise-view .btn-devise:active.focus,
+.devise-view .btn-devise:active:focus,
+.devise-view .btn-devise:active:hover,
+.devise-view .btn-devise:focus,
+.devise-view .btn-devise:hover,
+.devise-view .open > .dropdown-toggle.btn-devise,
+.devise-view .open > .dropdown-toggle.btn-devise,
+.devise-view .open > .dropdown-toggle.btn-devise.focus,
+.devise-view .open > .dropdown-toggle.btn-devise:focus,
+.devise-view .open > .dropdown-toggle.btn-devise:hover {
+  background-color: #43cb83;
+  border-color: #43cb83;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0; //圆角为0
+  }
+}
+
+.link-list {
+  overflow: hidden;
+  margin-bottom: 1.0625rem;
+}
+
+div {
+  margin: 0;
+}
+
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
+  margin-top: 60px;
+}
+
+.lead {
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+.jobs-show0 {
+  border-bottom: 1px dotted #CCC;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+.jobs-show {
+  border-bottom: 1px dotted #CCC;
+  padding: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Search.html.erb
+*/
+
+.search-info-title {
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  color: #0d6ded;
+  font-size: 20px;
+  text-align: center;
+}

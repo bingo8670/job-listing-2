@@ -29,15 +29,24 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#框架
 gem  'bootstrap-sass'
+#登录系统
 gem 'devise'
+#表格
 gem 'simple_form'
+#图标
 gem 'font-awesome-rails'
 gem 'carrierwave'
+#搜索
 gem 'ransack'
+#分页
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
+
 gem 'seo_helper'
+#客服系统
+gem 'intercom-rails'
 
 
 group :development, :test do
