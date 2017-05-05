@@ -12,7 +12,7 @@ class Admin::JobsController < ApplicationController
   end
 
   def new
-    @job = Job.where(:is_hidden => false).order("created_at DESC")
+    @job = Job.new
   end
 
   def create
@@ -64,7 +64,7 @@ class Admin::JobsController < ApplicationController
     @job = Job.find(params[:id])
 
     @job.hide!
-    
+
     redirect_to :back
   end
 
