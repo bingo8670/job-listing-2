@@ -1,11 +1,9 @@
-
-
       <div class="col-md-10 col-centered">
           <div class="panel panel-info">
             <div class="panel-heading"> Add a job </div>
             <div class="panel-body">
               <div class="pull-right">
-                <%= link_to("Add a job", new_admin_job_path, :class => "btn btn-default" ) %>
+                <%= link_to("Add a job", new_admin_job_path, :class => "btn btn-primary" ) %>
                   </div>
                     <table class="table table-boldered">
                       <thead>
@@ -43,9 +41,9 @@
                                         <%= link_to("Edit", edit_admin_job_path(job)) %>
                                         <%= link_to("Destroy", admin_job_path(job), :method => :delete, :data => { :confirm => "Are you sure?" }) %>
                                           <% if job.is_hidden %>
-                                            <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-xs btn-default") %>
+                                            <%= link_to("Publish", publish_admin_job_path(job) , :method => :post, :class => "btn btn-xs btn-success") %>
                                           <% else %>
-                                            <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-default") %>
+                                            <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-danger") %>
                                           <% end %>
                                       </td>
                               <td>
